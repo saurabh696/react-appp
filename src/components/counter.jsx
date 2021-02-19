@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class Counter extends Component {
-    state={
-        imageUrl: 'https://picsum.photos/400'
-};
   
     render() {
         const mystyle = {
@@ -16,7 +13,7 @@ class Counter extends Component {
         return (
             <div>
                 <h1 style={mystyle}>ISOMORPHIC REACT APP</h1>
-                <img style={{width:"100%"}} src={this.state.imageUrl} />
+                <img style={{ width: "100%" }} src='https://picsum.photos/400' />
             </div>
 
         );

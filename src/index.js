@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './components/counter';
+import Counter from './counter';
+import * as serviceworker from './serviceworker'
 
-ReactDOM.render(<Counter />, document.getElementById('root'));
+
+ ReactDOM.hydrate(<Counter />, document.getElementById('root'));
+
+
+serviceworker.unregister()
